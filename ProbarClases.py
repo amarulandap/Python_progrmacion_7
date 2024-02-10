@@ -2,6 +2,8 @@
 
 from ClaseArticulo import articulo
 from ClasePila import pila
+from ClaseCola import cola
+from ClaseEmpleado import empleado
 
 # probar la clase articulo.
 
@@ -15,6 +17,7 @@ articulo1.cantidadActual()                                                      
 
 # Probar la clase pila.
 
+print("\n")
 pila1 = pila()
 pila1.agregar(1)
 pila1.imprimirPila()
@@ -31,6 +34,33 @@ pila1.eliminar()
 pila1.imprimirPila()                                    # Eliminamos dos elementos e imprimimos. Mostrar los elementos [1, 3]
 tope = pila1.obtenerElemento()                          # Obtenemos el tope.
 print("Tope: ",tope)                                    # 3.
+
+
+# Probar la clase cola.
+
+print("\n")
+cola1 = cola()
+cola1.agregar(34)
+cola1.imprimirCola()
+cola1.agregar(53)
+cola1.imprimirCola()
+cola1.agregar(79)
+cola1.imprimirCola()
+cola1.agregar(25)
+cola1.imprimirCola()
+primerElemento = cola1.obtenerElemento()
+print("Primer elemento: ",primerElemento)
+cola1.eliminar()
+primerElemento = cola1.obtenerElemento()
+print("Primer elemento: ",primerElemento)
+
+
+# probar la clase empleado.
+
+print("\n")
+empleado1 = empleado(123, 2000000, 21000, 10, "casado", 2)
+empleado1.detallesDePago()
+
 
 
 
