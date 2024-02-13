@@ -4,6 +4,9 @@ from ClaseArticulo import articulo
 from ClasePila import pila
 from ClaseCola import cola
 from ClaseEmpleado import empleado
+from GuiConPoo import boton
+from IngresoYVerificacionDeDatos import validacion
+from tkinter import *
 
 # probar la clase articulo.
 
@@ -62,6 +65,28 @@ empleado1 = empleado(123, 2000000, 21000, 10, "casado", 2)
 empleado1.detallesDePago()
 
 
+# Probar la clase para crear los botones.
+
+marco = Tk()
+
+marco.title(" PRUEBA BOTÓN")
+marco.geometry("300x200")
+
+botonPrueba = boton(marco)
+
+marco.mainloop()
+
+
+# probar la calse para validar un dato.
+
+marco1 = Tk()
+
+marco1.title("VALIDAR VALOR INGRESADO")
+marco1.geometry("400x300")
+
+validarDato = validacion(marco1)
+
+marco1.mainloop()
 
 
 
